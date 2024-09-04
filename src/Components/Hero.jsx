@@ -57,9 +57,9 @@ const Hero = () => {
         <p className='text-xl md:text-2xl text-gray-800 mb-10' style={{ userSelect: 'none' }}>
           Chart your best career course with our AI innovations and expert career support, and much more.
         </p>
-        <button className="bg-gradient-to-r from-blue-600 to-teal-600 text-white px-8 py-4 rounded-full shadow-lg hover:shadow-2xl hover:scale-110 transition-transform duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <a href="https://signin-six-coral.vercel.app/" className="m-3 bg-gradient-to-r from-blue-600 to-teal-600 text-white px-8 py-4 rounded-full shadow-lg hover:shadow-2xl hover:scale-110 transition-transform duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-400">
           Get Started NOW!
-        </button>
+        </a>
       </div>
       <div className="w-full md:w-1/2 flex flex-col items-center mt-8 md:mt-0">
         <SwipeableCard feature={features[currentFeatureIndex]} bounce={bounce} />
