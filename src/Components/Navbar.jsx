@@ -20,6 +20,12 @@ const Navbar = () => {
           >
             Connect with Us
           </a>
+          <a
+            href="https://careerdostpost.vercel.app/"
+            className="bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-white px-6 py-2 rounded-full shadow-lg hover:shadow-xl transition-shadow focus:outline-none focus:ring-2 focus:ring-blue-300 transform hover:scale-105 hover:rotate-2"
+          >
+            Post Login Demo
+          </a>
         </div>
       </div>
 
