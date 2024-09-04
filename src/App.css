@@ -1,0 +1,21 @@
+/* styles.css */
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: scale(1.2); }
+  50% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.2); }
+}
+
+@keyframes slideInOut {
+  0% { opacity: 0; transform: translateX(50px); }
+  50% { opacity: 1; transform: translateX(0); }
+  100% { opacity: 0; transform: translateX(-50px); }
+}
+
+.card-animate {
+  animation: fadeInOut 1s ease-in-out;
+}
+
+.card-slide-animate {
+  animation: slideInOut 1s ease-in-out;
+}
