@@ -17,10 +17,10 @@ const SwipeableCard = ({ feature, bounce }) => {
         className={`w-72 h-72 bg-gradient-to-r from-teal-400 via-green-500 to-blue-600 p-8 rounded-full shadow-lg flex flex-col items-center justify-center text-center transition-transform transform ${bounce ? 'animate-spin' : ''} hover:scale-105 hover:transition-transform hover:duration-300`}
         style={{ userSelect: 'none', WebkitUserSelect: 'none', MozUserSelect: 'none', msUserSelect: 'none' }}
       >
-        <h2 className="text-2xl font-bold mb-4 text-white" style={{ userSelect: 'none' }}>
+        <h2 className="text-2xl font-bold mb-4 text-white" style={{ userSelect: 'none', fontWeight: 'bold' }}>
           {feature.title}
         </h2>
-        <p className="text-white text-lg" style={{ userSelect: 'none' }}>
+        <p className="text-white text-lg" style={{ userSelect: 'none', fontWeight: 'bold' }}>
           {feature.description}
         </p>
       </div>
