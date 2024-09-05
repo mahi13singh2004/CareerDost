@@ -39,14 +39,14 @@ const Hero = () => {
       setCurrentFeatureIndex((prevIndex) => (prevIndex + 1) % features.length);
     }, 2000); // Change feature every 2 seconds
   
-    return () => clearInterval(interval); // Cleanup interval on component unmount
+    return () => clearInterval(interval); 
   }, []);
   
 
   useEffect(() => {
     if (bounce) {
-      const timer = setTimeout(() => setBounce(false), 500); // Duration should match animation length
-      return () => clearTimeout(timer); // Cleanup timer on component unmount
+      const timer = setTimeout(() => setBounce(false), 500); 
+      return () => clearTimeout(timer); 
     }
   }, [bounce]);
 
@@ -63,7 +63,7 @@ const Hero = () => {
           Get Started NOW!
         </a>
       </div>
-      <div className="w-full md:w-1/2 flex flex-col items-center mt-8 md:mt-0 p-8"> {/* Added padding here */}
+      <div className="w-full md:w-1/2 flex flex-col items-center mt-8 md:mt-0 p-8"> 
         <SwipeableCard feature={features[currentFeatureIndex]} bounce={bounce} />
       </div>
     </div>
