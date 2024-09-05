@@ -17,14 +17,14 @@ const Navbar = () => {
             href="https://contactus-weld.vercel.app/"
             className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white px-6 py-2 rounded-full shadow-lg hover:shadow-xl transition-shadow focus:outline-none focus:ring-2 focus:ring-purple-300 transform hover:scale-105 hover:rotate-2"
             onClick={addInfo}
-            style={{ marginRight: '8px' }} // Added margin to prevent cutting off
+            style={{ margin: '10px' }} // Added margin to prevent cutting off
           >
             Connect with Us
           </a>
           <a
             href="https://careerdostpost.vercel.app/"
             className="bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-white px-6 py-2 rounded-full shadow-lg hover:shadow-xl transition-shadow focus:outline-none focus:ring-2 focus:ring-blue-300 transform hover:scale-105 hover:rotate-2"
-            style={{ marginLeft: '8px' }} // Added margin to prevent cutting off
+            style={{ margin: '8px' }} // Added margin to prevent cutting off
           >
             Post Login Demo
           </a>
