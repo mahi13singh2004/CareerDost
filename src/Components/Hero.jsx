@@ -6,7 +6,7 @@ const features = [
   { title: "RESOURCES", description: "Extensive library of resources for required exams." },
   { title: "WEBINARS", description: "Live and recorded webinars from experts." },
   { title: "A-Z ABOUT COLLEGES", description: "Comprehensive college information ranging to all fields." },
-  { title: "CAREER PATH ALIGNED WITH NEP", description: "Career paths aligned with NEP 2020." },
+  { title: "NEP ALIGNED", description: "Career paths aligned with NEP 2020." },
   { title: "24*7 ACTIVE SUPPORT", description: "Round-the-clock support." },
 ];
 
@@ -17,16 +17,17 @@ const SwipeableCard = ({ feature, bounce }) => {
         className={`w-72 h-72 bg-gradient-to-r from-teal-400 via-green-500 to-blue-600 p-8 rounded-full shadow-lg flex flex-col items-center justify-center text-center transition-transform transform ${bounce ? 'animate-spin' : ''} hover:scale-105 hover:transition-transform hover:duration-300`}
         style={{ userSelect: 'none', WebkitUserSelect: 'none', MozUserSelect: 'none', msUserSelect: 'none' }}
       >
-        <h2 className="text-2xl font-bold mb-4 text-white" style={{ userSelect: 'none' }}>
+        <h2 className="text-3xl font-bold mb-4 text-black" style={{ userSelect: 'none' }}>
           {feature.title}
         </h2>
-        <p className="text-white text-lg" style={{ userSelect: 'none' }}>
+        <p className="text-xl text-white" style={{ userSelect: 'none' }}>
           {feature.description}
         </p>
       </div>
     </div>
   );
 };
+
 
 const Hero = () => {
   const [currentFeatureIndex, setCurrentFeatureIndex] = useState(0);
@@ -36,10 +37,11 @@ const Hero = () => {
     const interval = setInterval(() => {
       setBounce(true);
       setCurrentFeatureIndex((prevIndex) => (prevIndex + 1) % features.length);
-    }, 3000); // Change feature every 3 seconds
-
+    }, 2000); // Change feature every 2 seconds
+  
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, []);
+  
 
   useEffect(() => {
     if (bounce) {
